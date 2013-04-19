@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+	<TextView android:text="Perk Description" style="@style/HeaderStyle"
+		android:id="@+id/perkDetailPerkName" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Perk Description" android:id="@+id/perkDetailPerkDescription"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:textStyle="bold"></TextView>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_gravity="center_horizontal" android:layout_width="wrap_content"
+		android:layout_marginTop="15dp">
+		<Button android:text="-" android:id="@+id/perkDetailLessButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		<TextView android:text="Lvl. 0" android:id="@+id/perkDetailRankDisplay"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="+" android:id="@+id/perkDetailMoreButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+	<TextView android:text="Perk level description" android:id="@+id/perkDetailPerkLevelDescription"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:gravity="center_horizontal">
+	<TextView android:text="Customize Ship" style="@style/HeaderStyle"
+		android:id="@+id/textView1" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_gravity="left"></TextView>
+	<TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Customization level"></TextView>
+	<Button android:text="Customize Ship" android:id="@+id/customizeShipDetailButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="200dp"></Button>
+	<TextView android:text="Ship Name" android:id="@+id/textView3"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<Button android:text="Change Ship Name" android:id="@+id/changeShipNameButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:width="200dp"></Button>
+</LinearLayout>

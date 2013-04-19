@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView android:text="Mount Points" android:id="@+id/textView1"
+		android:layout_width="wrap_content" style="@style/HeaderStyle"
+		android:layout_height="wrap_content"></TextView>
+	<LinearLayout android:id="@+id/mountPointLayout1"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView android:text="1" android:id="@+id/textView2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="Weapon 1" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/mountPointsButton1"></Button>
+		<Button android:text=" X " android:id="@+id/mountPointsUnequip1"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/mountPointLayout2"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView android:text="2" android:id="@+id/TextView04"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="Weapon 2" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/mountPointsButton2"></Button>
+		<Button android:text=" X " android:id="@+id/mountPointsUnequip2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/mountPointLayout3"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView android:text="3" android:id="@+id/TextView03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="Weapon 3" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/mountPointsButton3"></Button>
+		<Button android:text=" X " android:id="@+id/mountPointsUnequip3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/mountPointLayout4"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView android:text="4" android:id="@+id/TextView02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="Weapon 4" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/mountPointsButton4"></Button>
+		<Button android:text=" X " android:id="@+id/mountPointsUnequip4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/mountPointLayout5"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<TextView android:text="5" android:id="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Button android:text="Weapon 5" android:layout_width="wrap_content"
+			android:layout_weight="1" android:layout_height="wrap_content"
+			android:id="@+id/mountPointsButton5"></Button>
+		<Button android:text=" X " android:id="@+id/mountPointsUnequip5"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textStyle="bold"></Button>
+	</LinearLayout>
+
+</LinearLayout>

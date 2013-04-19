@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference android:key="pilot_name"
+		android:dialogMessage="Enter new pilot name:" android:dialogTitle="Pilot Name"
+		android:title="Pilot Name" android:defaultValue="Captain Blue" />
+	<CheckBoxPreference android:key="single_touch"
+		android:summary="(sliding finger off left or right button locks it into active state until pressed again)"
+		android:title="Optimize for single-touch"
+		android:defaultValue="false" />
+	<CheckBoxPreference android:key="dynamic_starfield"
+		android:summary="(disable to improve framerate)" android:title="Dynamic Starfield"
+		android:defaultValue="true" />
+	<ListPreference android:key="num_of_stars"
+		android:summary="Number of stars in the dynamic starfield"
+		android:title="Number of Stars" android:dependency="dynamic_starfield"
+		android:defaultValue="Normal" android:entries="@array/num_of_stars"
+		android:entryValues="@array/num_of_stars_values" />
+	<ListPreference android:key="particle_level"
+		android:title="Particle Effects" android:summary="(lower intensity to improve framerate)"
+		android:defaultValue="Normal" android:entries="@array/particle_levels"
+		android:entryValues="@array/particle_level_values" />
+	<CheckBoxPreference android:key="noAntialias"
+		android:summary="(enable to make graphics... well, blockier)"
+		android:title="Retro Graphics +1" android:defaultValue="true" />
+	<CheckBoxPreference android:key="reduce_collision"
+		android:summary="(improves framerate, but may cause player shots to occasionally not register collision with enemies)"
+		android:title="Collision Reduction" android:defaultValue="false" />
+	<CheckBoxPreference android:key="log_errors"
+		android:summary="(catch unexpected exceptions and log them to SD card for debugging while away from Eclipse)"
+		android:title="Error Logging / Prevent FC" android:defaultValue="false" />
+</PreferenceScreen>

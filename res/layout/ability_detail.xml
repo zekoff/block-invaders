@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<TextView android:text="Ability Name" android:id="@+id/abilityDetailAbilityName"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		style="@style/HeaderStyle"></TextView>
+	<TextView android:text="Ability Cooldown" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textStyle="bold" android:id="@+id/abilityDetailAbilityCooldown"></TextView>
+	<TextView android:text="Ability Description" android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_marginBottom="15dp" android:id="@+id/abilityDetailAbilityDescription"></TextView>
+	<Button android:text="Equip Ability" android:id="@+id/equipAbilityButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+</LinearLayout>

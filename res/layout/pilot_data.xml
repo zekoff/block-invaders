@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+	<TextView android:text="Pilot Data" android:id="@+id/textView1" style="@style/HeaderStyle"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:id="@+id/pilotDataName"></TextView>
+	<TextView android:text="Level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/pilotDataLevel"></TextView>
+	<TextView android:text="XP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/pilotDataXp"></TextView>
+	<TextView android:text="Perks unlocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/pilotDataPerksUnlocked"></TextView>
+	<TextView android:text="Money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:id="@+id/pilotDataMoney"></TextView>
+	<LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="100">
+		<Button android:text="Abilities" android:id="@+id/abilitiesButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="50"></Button>
+		<Button android:text="Perks" android:id="@+id/perksButton" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="50"></Button>
+	</LinearLayout>
+
+</LinearLayout>

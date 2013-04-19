@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical" android:padding="3dp" android:id="@+id/weaponRowLayout">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Weapon Name"
+		android:id="@+id/weaponRowName" style="@style/LabelStyle"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Level/Type"
+		android:id="@+id/weaponRowLevelType"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Proficiency"
+		android:id="@+id/weaponRowProficiency"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Rating"
+		android:id="@+id/weaponRowRating"></TextView>
+	<TextView android:text="Value" android:id="@+id/weaponRowValue"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>

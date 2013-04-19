@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView android:text="Weapon Details" android:id="@+id/textView4"
+		style="@style/HeaderStyle" android:layout_height="wrap_content"
+		android:layout_width="wrap_content"></TextView>
+	<TextView android:text="Weapon Name" android:id="@+id/textView1"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" android:textStyle="bold"></TextView>
+	<TextView android:text="Weapon Type" android:id="@+id/textView2"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+	<TextView android:text="Stats" android:id="@+id/textView3"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+	<Button android:text="Buy Weapon" android:id="@+id/buyButton"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+</LinearLayout>

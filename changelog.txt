@@ -1,0 +1,63 @@
+BlockInvaders! Changelog
+
+Alpha 5 (in-progress)
+-Added new starburst shot type for enemies.
+-Added new spread shot type for enemies.
+-Ability cooldowns reset after a wave in Endless mode.
+-Made the random enemies sector type much longer, and enemies spawn in actual waves now. Fun increased by 100%.
+-Added Spinner enemy type to random wave.
+-Added Big Cannon shot type for enemies.
+-Changed the Missile Barrage ability. Launches a bunch of small missiles rapidly.
+
+Alpha 4 (4 February 2012)
+-Rebuilt enemy firing methods to mirror the way in which MovementOrders works. Firing types can now be interchanged and set at runtime. They take an Enemy object (as either a parameter at instantiation or in a method call each frame at runtime) and use it to set power and x/y values, but the firing cooldowns, shot types, etc. are abstracted into the subclasses of FiringOrders.
+
+Alpha 3 (27 January 2012)
+-Tweaks to constants and strings: base weapon values, base enemy HP, added $ signs to values, lowered standard duration of messages in the HUD status bar
+-Bugfixes: endless mode no longer occasionally starts in sector 2; optimized the soul-crushingly inefficient implementation of MoveIfHit; shot power of Fighter enemies now properly scales with their level
+-New sector type added to endless mode (weak swarm)
+-Heavy-class ship added. Heavy-class ships have 5 mount points, a large hitbox, low speed and agility, and get a bonus to equipped armor.
+-Light-class ship added. Light-class ships have 3 mount points, a small hitbox, high speed and agility, get a bonus to equipped shield regeneration, cannot equip armor, and fire faster as their combo counter increases.
+-Armor added for player.
+-Armors and shields standardized around base DPS.
+-Can change ship chassis types on the Customize Ship screen.
+-"Insightful" perk added. Activate to see enemy HP bars.
+-Supercharge ability now boosts shot power for 2 seconds after using, as advertised.
+-"Tractor Beam" perk added. Ranks increase range of pull effect on pickups.
+-Any pickups currently onscreen when the Comm window appears will be drawn toward the player automatically, regardless of perks.
+-Combo meter will no longer decrease while Comm window is up.
+-Combo counter behaves better and its management has been encapsulated in a separate object. Combos are now built primarily by killing enemies in quick succession; long periods with no kills will cause the meter to decrease exponentially.
+-Combo penalty for being hit has been doubled. XP bonus from combo cut in half.
+-Drop rate for money reduced by 33%. Drop rate for weapons reduced by 20%.
+-Added line separating ability areas in the HUD when 2 abilities are equipped.
+-Added a new bullet trait -- armor piercing.
+-Added support for four true variations of each enemy type -- weak, shielded, armored, or tough.  Weak enemies have 30% of the base HP value of other enemies their level.  Armored enemies get 70% damage resistance except against armor-piercing shots.  Shielded enemies get a shield with max charge 1.5x their HP, which is vulnerable to energy shots.  Tough enemies get 2.5x times normal health but are vulnerable to radioactive (DoT) payloads.
+-Changed the way shields regenerate; there is now a brief pause between the time the shield is last hit by a bullet and the time it starts regenerating again.
+
+Alpha 2 (19 January 2012)
+-Added "Error Log / Prevent FC" option.  Enable this to prevent Force Close upon encountering errors and instead write the stack trace to the SD card in the file "bi.log".  (Used for debugging while not connected to Eclipse/ADB)
+-Doubled XP requirements for level gain
+-Combo counter now capped at 100 and combos increase only half as fast
+-Sector breaks added to Endless mode.  Advancing to the next sector increases difficulty and possibility of rewards, while returning to base ensures that any loot collected is preserved.  Dying mid-sector or quitting via the menu causes all loot gained since last returning to base to be lost.
+-Endless mode sectors split into three components: enemy type(s) and behavior, completion requirements, and optional random objectives
+-Loot table expanded to include weapons of varying qualities and levels
+-Power rating for each weapon now visible on equipment list
+-Weapon levels now cap at 10 and XP to level cut in half, but each level is only half as meaningful
+-Tweaks to level up screen
+-Added wake lock again
+-Added support for true multi-touch controls (on by default, change in Options); sliding off of left/right key does not lock it into active mode with multi-touch controls
+-Added/changed a few sound effects
+-Enemies can now drop money in addition to their standard loot.
+-Drop rates for weapons have been cut in half.
+-Mount Point / Loadout screen altered; provides direct unequip buttons, and buttons to display equipped weapon details.
+-Weapon Detail screen expanded; now links with actual weapon data.
+-Baseline weapon loadout is now 4 weapons.  Enemy health rebalanced accordingly.
+-Load All Abilities/Perks now initializes weapon loadout with four random weapons, and no longer adds a copy of every weapon to pilot inventory.
+-Shop now stocks weapons.  Inventory changed every 10 minutes (real time).
+-Can sell weapons from their detailed description screen.
+
+16 Sept 2011
+
+17 July 2011 -- Version 0.3
+
+13 July 2011 -- Version 0.2

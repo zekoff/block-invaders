@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical">
+	<TextView android:text="Shipyard" android:id="@+id/textView1" style="@style/HeaderStyle"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Ship name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:id="@+id/shipyardShipName"></TextView>
+	<TextView android:text="Ship class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/shipyardShipClass"></TextView>
+	<Button android:text="Change Loadout" android:id="@+id/changeLoadoutButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp" android:layout_marginTop="15dp"></Button>
+	<Button android:text="Buy Weapons" android:id="@+id/buyWeaponsButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+	<Button android:text="Customize Ship" android:id="@+id/customizeShipButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp" android:layout_marginTop="30dp"></Button>
+	<Button android:text="Trade in Ship" android:id="@+id/tradeShipButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+</LinearLayout>

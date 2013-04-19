@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+    <TextView android:text="Trade-In Ship" style="@style/HeaderStyle" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_height="wrap_content" android:weightSum="100">
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearLayout3" android:layout_width="wrap_content"
+			android:orientation="vertical" android:paddingRight="15px" android:layout_weight="50">
+			<TextView android:text="Old Ship" android:id="@+id/textView2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+			<TextView android:text="Ship Type" android:id="@+id/textView3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:text="Description/Stats" android:id="@+id/textView4"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:id="@+id/linearLayout4" android:layout_width="wrap_content"
+			android:orientation="vertical" android:layout_weight="50">
+			<TextView android:text="New Ship" android:id="@+id/textView5"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold"></TextView>
+			<TextView android:text="Ship Type" android:id="@+id/textView6"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:text="Description/Stats" android:id="@+id/textView7"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<Button android:text="Trade In" android:id="@+id/tradeShipConfirmButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:width="200dp" android:layout_marginTop="15dp"></Button>
+</LinearLayout>

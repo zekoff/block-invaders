@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="particle_levels">
+    	<item name="none">None (not recommended)</item>
+    	<item name="minimal">Minimal</item>
+    	<item name="normal">Normal</item>
+    	<item name="extreme">Extreme</item>
+    </string-array>
+    <string-array name="particle_level_values">
+    	<item name="none">0</item>
+    	<item name="minimal">0.5</item>
+    	<item name="normal">1</item>
+    	<item name="extreme">2</item>
+    </string-array>
+    <string-array name="num_of_stars">
+    	<item name="minimal">Minimal</item>
+    	<item name="normal">Normal</item>
+    	<item name="extreme">Extreme</item>
+    </string-array>
+    <string-array name="num_of_stars_values">
+    	<item name="minimal">20</item>
+    	<item name="normal">40</item>
+    	<item name="extreme">80</item>
+    </string-array>
+</resources>

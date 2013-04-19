@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.zekoff.blockinvaders" android:installLocation="preferExternal" android:versionName="Alpha 4" android:versionCode="4">
+	<uses-sdk android:minSdkVersion="8"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true">
+		<activity android:name="BlockInvaders" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="AbilityDetail" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="AbilityList" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="AbilityMain" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="BuyWeaponDetail" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="CustomizeShip" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="LoadoutMain" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="OptionsScreen" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="PerkDetail" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="PerksList" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="PilotData" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="Shipyard" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="ShopList" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="TradeShipDetail" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="TradeShipList" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="WeaponDetail" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="WeaponEquipList" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="MountPoints" android:screenOrientation="portrait"></activity>
+		<activity android:name=".combat.CampaignRunner" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="portrait"></activity>
+		<activity android:name="CampaignMainActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="CampaignMissionBriefing" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name="CampaignMissionDebriefing" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+		<activity android:name=".combat.EndlessRunner" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="portrait"></activity>
+	</application>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

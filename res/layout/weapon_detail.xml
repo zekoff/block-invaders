@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView android:text="Weapon Details" android:id="@+id/textView4"
+		style="@style/HeaderStyle" android:layout_height="wrap_content"
+		android:layout_width="wrap_content"></TextView>
+	<TextView android:text="Weapon Name" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textStyle="bold"
+		android:id="@+id/weaponDetailName"></TextView>
+	<TextView android:text="(Quality)" android:id="@+id/weaponDetailQuality"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Weapon Type" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/weaponDetailType"></TextView>
+	<TextView android:text="Proficiency" android:id="@+id/weaponDetailProficiency"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Power rating" android:id="@+id/weaponDetailRating"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<TextView android:text="Value" android:id="@+id/weaponDetailValue"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<Button android:text="Equip" android:id="@+id/equipWeaponButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:width="200dp"
+		android:layout_marginTop="15dp"></Button>
+	<Button android:text="Customize" android:id="@+id/customizeWeaponButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+	<Button android:text="Sell" android:id="@+id/sellWeaponButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:width="200dp"></Button>
+</LinearLayout>

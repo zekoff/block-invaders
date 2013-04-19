@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:scrollbars="vertical"
+	android:background="@drawable/bg">
+	<Button android:text="Options" android:id="@+id/optionsButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="right"></Button>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="BLOCK INVADERS"
+		android:layout_gravity="center" android:gravity="center"
+		android:typeface="monospace" android:textStyle="bold"
+		android:textSize="40dp" />
+	<Button android:text="Campaign" android:id="@+id/campaignButton"
+		android:layout_width="200dp" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:layout_marginTop="20dp"
+		android:maxWidth="200dp"></Button>
+	<Button android:text="Endless" android:id="@+id/endlessButton"
+		android:layout_width="200dp" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:layout_marginTop="20dp"></Button>
+	<Button android:text="Scenario" android:id="@+id/scenarioButton"
+		android:layout_width="200dp" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:layout_marginTop="20dp"></Button>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:weightSum="100" android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:gravity="center"
+		android:paddingTop="40dp">
+		<Button android:text="Pilot Data" android:id="@+id/pilotButton"
+			android:layout_weight="50" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></Button>
+		<Button android:text="Shipyard" android:id="@+id/shipyardButton"
+			android:layout_weight="50" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:maxWidth="200dp"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<Button android:id="@+id/deletePilotButton" android:text="Delete Pilot"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+		<Button android:id="@+id/seedAbilitiesPerksButton"
+			android:text="Load All Abilities/Perks" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"></Button>
+	</LinearLayout>
+</LinearLayout>
